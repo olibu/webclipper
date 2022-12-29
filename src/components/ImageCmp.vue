@@ -34,14 +34,7 @@ const loadImage = (e) => {
       img.onload = function () {
           canvas.width = img.width/3;
           canvas.height = img.height/3;
-
           ctx.drawImage(this, 0, 0, canvas.width, canvas.height);
-
-          // Do whatever image operation you need (resize/crop, visual effects, barcode detection, etc.+
-          // invertImage(ctx, canvas);
-
-          // You can even upload the new image to your server
-          // postCanvasDataToServer(canvas);
           let image = canvas.toDataURL("image/png")
 
           // skip the prefix of the base64 image ("data:image/png;base64,")
