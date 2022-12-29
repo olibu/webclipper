@@ -2583,9 +2583,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webcliper@workspace:.":
+"webclipper@workspace:.":
   version: 0.0.0-use.local
-  resolution: "webcliper@workspace:."
+  resolution: "webclipper@workspace:."
   dependencies:
     "@mdi/font": 7.0.96
     "@vitejs/plugin-vue": ^3.0.3
