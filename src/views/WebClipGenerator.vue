@@ -28,7 +28,7 @@
         hint="The URL to be opened"
         @focus="scrollIntoView"
       ></v-text-field>
-      <ImageCmp :image="image"/>
+      <ImageCmp :image="image" :url="url"/>
       <v-btn
         @click="generate"
       >
@@ -45,6 +45,9 @@ import {ref} from 'vue'
 import { generateWebClip } from '@/helper/webcliptemplate.js'
 import { v4 as uuidv4 } from 'uuid'
 import ImageCmp from '@/components/ImageCmp.vue'
+import { useAppStore } from '@/store/app.js'
+
+const store = useAppStore()
 
 const label = ref('')
 const id = ref(uuidv4())
@@ -53,6 +56,22 @@ const image = ref({})
 
 
 const generate = () => {
+  if (!label.value) {
+    store.showSnackbar('Missing label!')
+    return
+  }
+  if (!id.value) {
+    store.showSnackbar('Missing id!')
+    return
+  }
+  if (!url.value  || !url.value.toLowerCase().startsWith('http')) {
+    store.showSnackbar('Missing or invalid URL!')
+    return
+  }
+  if (!image.value  || !image.value.data) {
+    store.showSnackbar('Missing image!')
+    return
+  }
   const clip = {
     payloadId: id.value,
     payloadUUID: id.value,

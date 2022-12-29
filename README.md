@@ -21,6 +21,13 @@ Then you can "generate" you web clip. It will be automatically be loaded.
 After the installation of the Profile in "settings" of you device you
 will see an app icon on your homescreen.
 
+# Todo:
+
+* Loading of images from URL
+* Sizecheck for images
+* PWA
+* Storage if Web Clips for later changes
+
 # Credits
 
 Example to locally load an image.
