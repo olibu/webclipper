@@ -1,12 +1,12 @@
 <template>
   <v-container>
     <v-responsive class="d-flex align-center text-center">
-      <h1 class="text-h2 font-weight-bold">WebClip Generator</h1>
+      <h1 class="text-h3 font-weight-bold">Web Clipper</h1>
       
       <div class="py-2" />
       
       <div class="text-body-2 font-weight-light mb-n1">
-        Welcome to the Web Clip Generator for iOS.
+        Welcome to the Web Clipper a generator of Web Clips for iOS.
       </div>
 
       <div class="py-2" />
@@ -28,6 +28,7 @@
         hint="The URL to be opened"
         @focus="scrollIntoView"
       ></v-text-field>
+      <ImageCmp :image="image"/>
       <v-btn
         @click="generate"
       >
@@ -41,12 +42,14 @@
 
 <script setup>
 import {ref} from 'vue'
-import { generateWebClip } from '../helper/webcliptemplate.js'
+import { generateWebClip } from '@/helper/webcliptemplate.js'
 import { v4 as uuidv4 } from 'uuid'
+import ImageCmp from '@/components/ImageCmp.vue'
 
 const label = ref('')
 const id = ref(uuidv4())
 const url = ref('')
+const image = ref({})
 
 
 const generate = () => {
@@ -54,7 +57,8 @@ const generate = () => {
     payloadId: id.value,
     payloadUUID: id.value,
     label: label.value,
-    url: url.value
+    url: url.value,
+    image: image.value.data,
   }
   const webclip = generateWebClip(clip)
   const link = document.createElement('a')

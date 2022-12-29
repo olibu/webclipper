@@ -8,6 +8,10 @@ function generateWebClip(clip) {
 		<dict>
 			<key>FullScreen</key>
 			<true/>
+			<key>Icon</key>
+			<data>
+			${clip.image}
+			</data>
 			<key>IgnoreManifestScope</key>
 			<false/>
 			<key>IsRemovable</key>
