@@ -1,57 +1,36 @@
-# essentials
+# Web Clipper
 
-## Project setup
+App to install a Web Clip locally onto an iOS device.
 
-```
-# yarn
-yarn
+This is useful to have the look and feel of an app for an ordenary URL. The page
+is shown in fullscreen without any address bar and in it's own window. So, you
+can use it as any other app on your iOS device.
 
-# npm
-npm install
+# Usage
 
-# pnpm
-pnpm install
-```
+Note: Currently you have to build the app on your own. But I plan to provide it
+as PWA from my github page.
 
-### Compiles and hot-reloads for development
+Open the page in Safari and provide
+* Label: Name of the app on your homescreen
+* Id: Unique Id of the app (web clips with the same id will be replaced)
+* Url: URL to be opened by the Web Clip
+* Image: Image to be used for the Web Clip on your homescreen
 
-```
-# yarn
-yarn dev
+Then you can "generate" you web clip. It will be automatically be loaded.
+After the installation of the Profile in "settings" of you device you
+will see an app icon on your homescreen.
 
-# npm
-npm run dev
+# Credits
 
-# pnpm
-pnpm dev
-```
+Example to locally load an image.
 
-### Compiles and minifies for production
+https://gist.github.com/bradgorman/4247000
 
-```
-# yarn
-yarn build
+Example how to download a local file to iOS.
 
-# npm
-npm run build
+https://github.com/szimek/sharedrop
 
-# pnpm
-pnpm build
-```
+## License
 
-### Lints and fixes files
-
-```
-# yarn
-yarn lint
-
-# npm
-npm run lint
-
-# pnpm
-pnpm lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://vitejs.dev/config/).
+Agenda is licensed under the [MIT License](https://tldrlegal.com/l/mit)
