@@ -16,8 +16,9 @@
 
 #canvas {
     border: 2px solid white;
-    background-color: gray;
     width: 100px;
     height: 100px;
     border-radius: 25px;
+    background-image: url('canvas_bg.png'); 
+    background-repeat: repeat;
 }
