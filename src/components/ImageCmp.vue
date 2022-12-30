@@ -38,7 +38,7 @@ import imagePath from '@/assets/canvas_bg.png'
 
 const store = useAppStore()
 
-const props = defineProps(['image', 'url'])
+const props = defineProps(['image'])
 
 const openImage = () => {
   document.getElementById('fileloader').click()

@@ -31,7 +31,7 @@
         hint="The URL to be opened"
         @focus="scrollIntoView"
       ></v-text-field>
-      <ImageCmp :image="image" :url="url"/>
+      <ImageCmp :image="image"/>
       <v-btn
         @click="generate"
       >
