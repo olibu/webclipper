@@ -48,7 +48,7 @@ const loadImage = (e) => {
   const canvas = document.getElementById('canvas')
   const ctx = canvas.getContext("2d")
   const reader = new FileReader
-  reader.onload = function (event) {
+  reader.onload = function () {
     const img = new Image()
     img.src = reader.result
     img.onload = function () {
@@ -63,7 +63,7 @@ const loadImage = (e) => {
   reader.readAsDataURL(e.target.files[0]);
 }
 
-const loadImageFromClip = async (e) => {
+const loadImageFromClip = async () => {
   try {
     let pasted = false
     if (!navigator.clipboard) {
@@ -79,7 +79,7 @@ const loadImageFromClip = async (e) => {
           const canvas = document.getElementById('canvas')
           const ctx = canvas.getContext("2d")
           const reader = new FileReader
-          reader.onload = function (event) {
+          reader.onload = function () {
             const img = new Image()
             img.src = reader.result
             img.onload = function () {
