@@ -1,7 +1,12 @@
 <template>
   <v-container>
     <v-responsive class="d-flex align-center text-center">
-      <h1 class="text-h3 font-weight-bold">Web Clipper</h1>
+      <div class="d-flex justify-center">
+        <p class="text-h3 font-weight-bold">Web&nbsp;Clipper</p>
+        <p class="text-caption" align="right">V0.9.0</p>
+      </div>
+      
+      
       
       <div class="py-2" />
       
