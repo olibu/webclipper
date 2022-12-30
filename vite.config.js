@@ -1,6 +1,7 @@
 // Plugins
 import vue from '@vitejs/plugin-vue'
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+import { VitePWA } from 'vite-plugin-pwa'
 
 // Utilities
 import { defineConfig } from 'vite'
@@ -19,6 +20,32 @@ export default defineConfig({
         configFile: 'src/styles/settings.scss',
       },
     }),
+    VitePWA({
+      registerType: 'prompt',
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,woff,ttf,woff2,eot,mp3}'],
+      },
+      injectRegister: 'auto',
+      includeAssets: ['favicon.ico'],
+      manifest: {
+        name: 'WebClipper',
+        short_name: 'WebClipper',
+        description: 'WebClipper',
+        theme_color: '#ffffff',
+        icons: [
+          {
+            src: 'wcg192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: 'wcg512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
+    }),
   ],
   define: { 'process.env': {} },
   resolve: {
@@ -34,6 +61,10 @@ export default defineConfig({
       '.tsx',
       '.vue',
     ],
+  },
+  base: './',
+  build: {
+    outDir: './wcg',
   },
   server: {
     host: '0.0.0.0',

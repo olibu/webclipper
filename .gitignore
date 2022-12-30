@@ -1,7 +1,7 @@
 .DS_Store
 .yarn
 node_modules
-/dist
+wcg
 
 # local env files
 .env.local

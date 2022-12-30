@@ -23,7 +23,6 @@ will see an app icon on your homescreen.
 
 # Todo:
 
-* Loading of images from URL
 * Sizecheck for images
 * PWA
 * Storage if Web Clips for later changes
