@@ -24,8 +24,7 @@ will see an app icon on your homescreen.
 # Todo:
 
 * Sizecheck for images
-* PWA
-* Storage if Web Clips for later changes
+* Storage of Web Clips for later changes
 
 # Releases
 
