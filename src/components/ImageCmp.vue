@@ -1,9 +1,17 @@
 <template>
   <v-container>
-    <v-file-input id="fileloader" type="file" class="hiddenfield" accept="image/*" @change="loadImage"/>
+    <v-file-input 
+      id="fileloader" 
+      type="file" 
+      class="hiddenfield" 
+      accept="image/*" 
+      @change="loadImage"
+    />
     
     <v-row>
-      <v-col align="right" @click="triggerPaste">
+      <v-col align="right" 
+        @click="triggerPaste"
+      >
         <canvas id="canvas" :style="{ backgroundImage: `url(${imagePath})` }"></canvas>
       </v-col>
       <v-col align="left">
@@ -125,6 +133,9 @@ document.onpaste = function(event){
       }
       reader.readAsDataURL(blob)
       pasted = true
+    }
+    else if (item.kind === 'string') {
+      pasted = true // ignore text paste in text fields
     }
   }
   if (!pasted) {
