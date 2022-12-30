@@ -22,6 +22,8 @@ Then you can "generate" you web clip. It will be automatically be loaded.
 After the installation of the Profile in "settings" of you device you
 will see an app icon on your homescreen.
 
+![Demo](WebClipper.gif)
+
 # Todo:
 
 * Sizecheck for images
