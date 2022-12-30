@@ -45,4 +45,4 @@ https://github.com/szimek/sharedrop
 
 ## License
 
-Agenda is licensed under the [MIT License](https://tldrlegal.com/l/mit)
+WebClipper is licensed under the [MIT License](https://tldrlegal.com/l/mit)
