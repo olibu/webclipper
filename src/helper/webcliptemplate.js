@@ -50,10 +50,10 @@ function generateWebClip(clip) {
 	<integer>1</integer>
 </dict>
 </plist>
-`;
+`
     return new Blob([str], {
         type: "application/x-apple-aspen-config",
-    });;
+    })
 }
 
 export { generateWebClip };
