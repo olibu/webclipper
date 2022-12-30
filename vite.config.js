@@ -62,10 +62,6 @@ export default defineConfig({
       '.vue',
     ],
   },
-  base: './',
-  build: {
-    outDir: './wcg',
-  },
   server: {
     host: '0.0.0.0',
     port: 3000,
