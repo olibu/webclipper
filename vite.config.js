@@ -69,10 +69,10 @@ export default defineConfig({
   base: '/wcg/',
   build: {
     outDir: './wcg',
-    rollupOptions: {
-      external: [
-        'workbox-window',
-      ],
-    },
+    // rollupOptions: {
+    //   external: [
+    //     'workbox-window',
+    //   ],
+    // },
   },
 })
