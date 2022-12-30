@@ -8,14 +8,15 @@ can use it as any other app on your iOS device.
 
 # Usage
 
-Note: Currently you have to build the app on your own. But I plan to provide it
-as PWA from my github page.
+You can start the application from my [github homepage](http://localhost:5173/wcg/).
+In case you want to be able to use the app offline, you can click on "Add to home screen"
+in Safari.
 
 Open the page in Safari and provide
 * Label: Name of the app on your homescreen
 * Id: Unique Id of the app (web clips with the same id will be replaced)
 * Url: URL to be opened by the Web Clip
-* Image: Image to be used for the Web Clip on your homescreen
+* Image: Image to be used for the Web Clip on your homescreen (open from your fotos or paste it from clipboard)
 
 Then you can "generate" you web clip. It will be automatically be loaded.
 After the installation of the Profile in "settings" of you device you
@@ -39,13 +40,16 @@ will see an app icon on your homescreen.
   
 # Credits
 
-Example to locally load an image.
+Example to locally load an image (Thx to bradgorman).
 
 https://gist.github.com/bradgorman/4247000
 
-Example how to download a local file to iOS.
+Example how to download a local file to iOS (Thx to Szymon Nowak).
 
 https://github.com/szimek/sharedrop
+
+Example how to use the clipboard on iOS (thx to Emanuel).
+https://stackoverflow.com/questions/490908/paste-an-image-from-clipboard-using-javascript
 
 ## License
 
