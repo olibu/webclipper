@@ -3832,6 +3832,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["escalade", [\
+        ["npm:3.1.1", {\
+          "packageLocation": "./.yarn/cache/escalade-npm-3.1.1-e02da076aa-a3e2a99f07.zip/node_modules/escalade/",\
+          "packageDependencies": [\
+            ["escalade", "npm:3.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["escape-string-regexp", [\
         ["npm:1.0.5", {\
           "packageLocation": "./.yarn/cache/escape-string-regexp-npm-1.0.5-3284de402f-6092fda75c.zip/node_modules/escape-string-regexp/",\
@@ -5900,10 +5909,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["rollup", [\
-        ["npm:3.9.0", {\
-          "packageLocation": "./.yarn/cache/rollup-npm-3.9.0-2fd4992d40-b0ce4baa8d.zip/node_modules/rollup/",\
+        ["npm:2.79.1", {\
+          "packageLocation": "./.yarn/cache/rollup-npm-2.79.1-94e707a9a3-6a2bf167b3.zip/node_modules/rollup/",\
           "packageDependencies": [\
-            ["rollup", "npm:3.9.0"],\
+            ["rollup", "npm:2.79.1"],\
             ["fsevents", "patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"]\
           ],\
           "linkType": "HARD"\
@@ -6626,7 +6635,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fast-glob", "npm:3.2.12"],\
             ["pretty-bytes", "npm:6.0.0"],\
             ["rollup", "npm:3.9.0"],\
-            ["vite", "virtual:2f0c9c2b37a3158f60cbe661398581022b525392e2cf7dccd493ec1a846c8d10923af0d7ca73ba5d11b7138eb92caf3b18bc6841af027e275f7aca00d9cb5738#npm:3.2.5"],\
+            ["vite", "virtual:2f0c9c2b37a3158f60cbe661398581022b525392e2cf7dccd493ec1a846c8d10923af0d7ca73ba5d11b7138eb92caf3b18bc6841af027e275f7aca00d9cb5738#npm:4.0.3"],\
             ["workbox-build", "npm:6.5.4"],\
             ["workbox-window", "npm:6.5.4"]\
           ],\
@@ -6809,6 +6818,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sass", "npm:1.57.1"],\
             ["uuid", "npm:9.0.0"],\
             ["vite", "virtual:2f0c9c2b37a3158f60cbe661398581022b525392e2cf7dccd493ec1a846c8d10923af0d7ca73ba5d11b7138eb92caf3b18bc6841af027e275f7aca00d9cb5738#npm:4.0.3"],\
+            ["vite-plugin-pwa", "virtual:2f0c9c2b37a3158f60cbe661398581022b525392e2cf7dccd493ec1a846c8d10923af0d7ca73ba5d11b7138eb92caf3b18bc6841af027e275f7aca00d9cb5738#npm:0.14.0"],\
             ["vite-plugin-vuetify", "virtual:2f0c9c2b37a3158f60cbe661398581022b525392e2cf7dccd493ec1a846c8d10923af0d7ca73ba5d11b7138eb92caf3b18bc6841af027e275f7aca00d9cb5738#npm:1.0.1"],\
             ["vue", "npm:3.2.45"],\
             ["vue-router", "virtual:2f0c9c2b37a3158f60cbe661398581022b525392e2cf7dccd493ec1a846c8d10923af0d7ca73ba5d11b7138eb92caf3b18bc6841af027e275f7aca00d9cb5738#npm:4.1.6"],\
