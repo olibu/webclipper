@@ -8,7 +8,7 @@ can use it as any other app on your iOS device.
 
 # Usage
 
-You can start the application from my [github homepage](http://localhost:5173/wcg/).
+You can start the application from my [github homepage](https://olibu.github.io/wcg/).
 In case you want to be able to use the app offline, you can click on "Add to home screen"
 in Safari.
 
