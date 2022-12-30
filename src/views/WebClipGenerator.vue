@@ -3,11 +3,9 @@
     <v-responsive class="d-flex align-center text-center">
       <div class="d-flex justify-center">
         <p class="text-h3 font-weight-bold">Web&nbsp;Clipper</p>
-        <p class="text-caption" align="right">V0.9.0</p>
+        <p class="text-caption" align="right">V1.0.0</p>
       </div>
-      
-      
-      
+
       <div class="py-2" />
       
       <div class="text-body-2 font-weight-light mb-n1">
