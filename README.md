@@ -29,6 +29,11 @@ will see an app icon on your homescreen.
 
 # Releases
 
+## 1.0.0
+
+* PWA functionality added
+* Icon added
+
 ## 0.9.0
 
 * initial version
