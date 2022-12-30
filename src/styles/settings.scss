@@ -8,17 +8,3 @@
 // @use 'vuetify' with (
 //   $color-pack: false
 // );
-.hiddenfield {
-    visibility: hidden;
-    position: absolute;
-    top: 0px;
-}
-
-#canvas {
-    border: 2px solid white;
-    width: 100px;
-    height: 100px;
-    border-radius: 25px;
-    background-image: url('canvas_bg.png'); 
-    background-repeat: repeat;
-}

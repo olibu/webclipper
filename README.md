@@ -23,11 +23,16 @@ will see an app icon on your homescreen.
 
 # Todo:
 
-* Loading of images from URL
 * Sizecheck for images
 * PWA
 * Storage if Web Clips for later changes
 
+# Releases
+
+## 0.9.0
+
+* initial version
+  
 # Credits
 
 Example to locally load an image.
