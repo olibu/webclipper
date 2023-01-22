@@ -31,7 +31,7 @@ export default defineConfig({
         name: 'WebClipper',
         short_name: 'WebClipper',
         description: 'WebClipper',
-        theme_color: '#000000',
+        theme_color: '#121212',
         icons: [
           {
             src: 'wcg192.png',
