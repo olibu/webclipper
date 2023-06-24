@@ -13,7 +13,7 @@ function generateWebClip(clip) {
 			${clip.image}
 			</data>
 			<key>IgnoreManifestScope</key>
-			<true/>
+			<${clip.ignoreManifestScope}/>
 			<key>IsRemovable</key>
 			<true/>
 			<key>Label</key>
@@ -31,7 +31,7 @@ function generateWebClip(clip) {
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>Precomposed</key>
-			<false/>
+			<${clip.precomposed}/>
 			<key>URL</key>
 			<string>${clip.url}</string>
 		</dict>

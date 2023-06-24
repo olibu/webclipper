@@ -16,21 +16,35 @@
       <v-text-field 
         label="Label"
         v-model="label"
+        density="compact"
         placeholder="My App"
         hint="The text shown below the icon on your home screen"
       ></v-text-field>
       <v-text-field 
         label="Id"
         v-model="id"
+        density="compact"
         hint="A unique id of the web clip. Use the same id to replace an existing App"  
       ></v-text-field>
       <v-text-field 
         label="Url"
         v-model="url"
-        placeholder="https://myurl.com"
-        hint="The URL to be opened"
+        density="compact"
+        placeholder="https://myurl.com or messages://"
+        hint="The URL to be opened. You can use locally register web hooks, too. Do not use spaces."
         @focus="scrollIntoView"
       ></v-text-field>
+      <v-checkbox 
+        label="Precomposed (do not adjust the icon)"
+        v-model="precomposed"
+        density="compact"
+        hide-details="true"
+      ></v-checkbox>
+      <v-checkbox 
+        label="Ignore manifest (force no Safari UI)"
+        v-model="ignoreManifestScope"
+        density="compact"
+      ></v-checkbox>
       <ImageCmp :image="image"/>
       <v-btn
         @click="generate"
@@ -56,6 +70,8 @@ const label = ref('')
 const id = ref(uuidv4())
 const url = ref('')
 const image = ref({})
+const precomposed = ref(true)
+const ignoreManifestScope = ref(false)
 
 
 const generate = () => {
@@ -81,6 +97,8 @@ const generate = () => {
     label: label.value,
     url: url.value,
     image: image.value.data,
+    precomposed: precomposed.value,
+    ignoreManifestScope: ignoreManifestScope.value,
   }
   const webclip = generateWebClip(clip)
   const link = document.createElement('a')
