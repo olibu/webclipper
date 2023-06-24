@@ -13,7 +13,7 @@ function generateWebClip(clip) {
 			${clip.image}
 			</data>
 			<key>IgnoreManifestScope</key>
-			<false/>
+			<true/>
 			<key>IsRemovable</key>
 			<true/>
 			<key>Label</key>
