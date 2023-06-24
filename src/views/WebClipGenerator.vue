@@ -67,7 +67,7 @@ const generate = () => {
     store.showSnackbar('Missing id!')
     return
   }
-  if (!url.value  || !url.value.toLowerCase().startsWith('http')) {
+  if (!url.value  || !url.value === '') {
     store.showSnackbar('Missing or invalid URL!')
     return
   }
