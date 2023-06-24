@@ -31,6 +31,11 @@ will see an app icon on your homescreen.
 
 # Releases
 
+## 1.1.0
+
+* Do not check for http in URL to enable local web hooks
+* Manifest and precomposed parameter added
+
 ## 1.0.0
 
 * PWA functionality added
